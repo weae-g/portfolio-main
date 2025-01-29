@@ -1,0 +1,109 @@
+$sky-color: #080013;
+$moon-color: #e4f5ff;
+$moon-light: #f6fbff;
+$star-color: #ffffff;
+$star-light: #f6fbff;
+$num-stars: 200;
+
+$primary-color: #4b0082; // Indigo
+$secondary-color: #5900ff; // Dark Purple
+$gradient-start: #5900ff; // Very Dark Purple
+$gradient-end: #1d004d; // Deep Indigo
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+@media (hover: none) {
+    * {
+        &:hover {
+            transform: none;
+        }
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: $sky-color;
+    overflow: hidden;
+    color: #ecf8ff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 0;
+    font-size: 20px;
+    padding: 0.5rem 0;
+    letter-spacing: 0.2rem;
+    text-align: start;
+
+    span {
+        color: #e2bf20;
+        display: inline-block;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #ecf8ff;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+}
+
+.card {
+    border-radius: 10px;
+    background-image: linear-gradient(135deg, $gradient-start, $gradient-end);
+    min-width: 80px;
+    min-height: 80px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-360deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}

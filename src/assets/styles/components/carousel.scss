@@ -1,0 +1,39 @@
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 320px;
+    height: 320px;
+    position: relative;
+
+    &__item {
+        min-width: 100%;
+        transition: transform 0.5s ease;
+        animation: slide 9s infinite;
+    }
+
+    &__item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    33.33% {
+        transform: translateX(0%);
+    }
+    44.44% {
+        transform: translateX(-100%);
+    }
+    77.77% {
+        transform: translateX(-100%);
+    }
+    88.88% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}

@@ -1,0 +1,50 @@
+.sky {
+    height: 100vh;
+    background: $sky-color;
+    z-index: -1;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba($color: #000000, $alpha: 0.7);
+    }
+}
+
+.moon {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    width: 300px;
+    height: 300px;
+    background: $moon-color;
+    border-radius: 50%;
+    box-shadow: 0 0 50px 5px $moon-light;
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: $star-color;
+    border-radius: 50%;
+    box-shadow: 0 0 25px 2px $star-light;
+}
+
+@media (max-width: 768px) {
+    .moon {
+        top: 0%;
+    }
+}
