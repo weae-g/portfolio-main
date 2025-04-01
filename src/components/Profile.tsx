@@ -4,10 +4,10 @@ import Typewriter from './Typewriter'
 
 const Profile: React.FC = () => {
 	const texts = [
-		'Frontend Developer',
-		'Tech Enthusiast',
-		'Lover of Music',
-		'Always Learning New Things',
+		'Fullstack-разработчик',
+		'Tech enthusiast',
+		'Music lover',
+		'Im always learning something new.',
 	]
 
 	return (
@@ -23,11 +23,11 @@ const Profile: React.FC = () => {
 					<p className='profile__name'>Khamidullin Ainur</p>
 					<Typewriter texts={texts} speed={100} />
 					<div className='profile__socials'>
-						<a href='https://t.me/sadwoe' className='profile__social-link'>
+						<a href='https://t.me/weae-g' className='profile__social-link'>
 							<FaTelegram />
 						</a>
 						<a
-							href='https://github.com/ezy4me'
+							href='https://github.com/weae-g'
 							className='profile__social-link'
 						>
 							<FaGithub />

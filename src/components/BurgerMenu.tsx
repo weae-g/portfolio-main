@@ -54,7 +54,7 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ isOpen, onClose }) => {
 								<FaTelegram />
 							</a>
 							<a
-								href='https://github.com/ezy4me'
+								href='https://github.com/weae-g'
 								className='profile__social-link'
 							>
 								<FaGithub />

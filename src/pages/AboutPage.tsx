@@ -17,7 +17,7 @@ function AboutPage() {
 						&nbsp;&nbsp;<span className='property'>location</span>:{' '}
 						<span className='string'>"Kazan, Russia"</span>,<br />
 						&nbsp;&nbsp;<span className='property'>profession</span>:{' '}
-						<span className='string'>"Web Developer"</span>,<br />
+						<span className='string'>"Full-stack Developer"</span>,<br />
 						&nbsp;&nbsp;<span className='property'>interests</span>: [
 						<span className='string'>"Coding"</span>,{' '}
 						<span className='string'>"Music"</span>], <br />
